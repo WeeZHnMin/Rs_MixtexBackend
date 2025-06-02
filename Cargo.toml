@@ -1,0 +1,29 @@
+#./Cargo.toml
+[package]
+name = "MixtexBackend"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+image = { version = "0.25.2", features = ["default"] }
+ndarray = "0.15.6"
+anyhow = "1.0"
+tokenizers = { version="0.21.0-rc0", features=["default"] }
+ort = "1.16.3"
+axum = { version = "0.7", features = ["multipart"] }
+tokio = { version = "1", features = ["full"] }
+futures = "0.3"
+tokio-stream = "0.1"
+tower-http = { version = "0.6.4", features = ["cors"] }  
+
+[profile.release]
+panic = "abort"
+lto = true
+codegen-units = 1
+
+[package.metadata.windows]
+subsystem = "windows"
+
+[build-dependencies]
+winres = "0.1"

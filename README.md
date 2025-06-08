@@ -1,6 +1,3 @@
-以下是你提供的 Markdown 文档内容的润色与中英优化版本，语法更准确、表达更自然，适合用于正式的开源项目说明文档（README.md）：
-
----
 
 <p align="center">
   <img src="icon.ico" width="450" height="450">

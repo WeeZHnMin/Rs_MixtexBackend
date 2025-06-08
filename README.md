@@ -3,7 +3,7 @@
 ---
 
 <p align="center">
-  <img src="assets/icon.ico" width="450" height="450">
+  <img src="icon.ico" width="450" height="450">
 </p>
 
 ## 项目介绍 | Project Introduction
